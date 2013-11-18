@@ -1,0 +1,11 @@
+
+Run each bldg for:
+
+For each param set:
+
+    From startYear to endYear
+
+         Honor build date
+
+
+Year ClimateFactor P1 P2 ... PN ... Elec[J F M A M J J A S O N D] Gas[...]

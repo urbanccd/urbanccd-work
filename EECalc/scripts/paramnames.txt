@@ -1,0 +1,117 @@
+EUI Mode
+Calculation Mode
+Number of Monte Carlo Runs
+Building Type
+Year Built
+Location
+Weather Data
+Terrain class
+Above Ground Stories
+Total building conditioned floor area [m2]
+Floor-to-Floor Height [m]
+Building occupancy schedule - From:
+Building occupancy schedule - To:
+Equivalent full-load occupancy hours - From:
+Equivalent full-load occupancy hours - To:
+People Density: Occ (m2/person)
+People Density: Unocc (m2/person)
+Occupied Internal set point for heating [¡C]
+Unoccupied Internal set point for heating [¡C]
+Occupied Internal set point for cooling [¡C]
+Unoccupied Internal set point for cooling [¡C]
+Electric Powered Appliances [W/m2] Occ
+Electric Powered Appliances [W/m2] Unocc
+Natural Gas Powered Appliances [W/m2] Occ
+Natural Gas Powered Appliances [W/m2] Unocc
+Occupied Interior Lighting Power Intensity [W/m2] 
+Unoccupied Interior Lighting Power Intensity [W/m2] 
+Exterior Lighting Power [W]
+Lighting daylighting sensor system
+Lighting occupancy sensor system
+Lighting constant illumination control
+Fraction of Electric Plugload  Billed to Tenant
+Fraction of Lighting  Billed to Tenant
+Extra Electric Plugload Billed Directly to Tenant [kW]
+Cooling System COP [KW/KW]
+Cooling system Integrated Partial Load index Value (IPLV)
+HVAC system type
+Heating Energy Carrier
+Heating System Efficiency [KW/KW]
+Ventilation type
+Fresh air supply  flow rate
+Supply-Exhaust Rate (Default = 0 L/S)
+Heat recovery efficiency
+Exhaust air recirculation percentage
+Building air leakage (infiltration)
+Pump control for cooling
+Pump control for heating
+DHW Demand [m3/yr]
+DHW System Efficiency
+DHW Distribution System
+DHW Energy Carrier
+Type of BEM system installed
+InteriorHeat Capacity (Thermal Mass)
+Envelope Heat Capacity (Thermal Mass)
+Specifiec fan power [W/(l/s)]
+Fan flow control factor
+U-value 
+Solar Absorption coefficient
+Thermal Emissivity
+U-value  [W/m2K]
+SHGC
+Shading Correction Factor (for overhangs)
+Shading Device
+U-value
+Solar Absorption coefficient
+Thermal Emissivity
+U-value 
+SHGC
+S Wall Area
+SE Wall Area
+E Wall Area
+NE Wall Area
+N Wall Area
+NW Wall Area
+W Wall Area
+SW Wall Area
+Roof Area
+S Window Area
+SE Window Area
+E WindowArea
+NE WindowArea
+N Window Area
+NW Window Area
+W Window Area
+SW Window Area
+Skylight Area
+Interior Heat Capacity (set by qualitative pulldown)
+Exterior Heat Capacity (set by qualitative pulldown)
+Infiltration  (set by qualitative pulldown above)
+HVAC Hot/Cold Waste Factor (Set by HVAC Type)
+HVAC system heating loss factor (Set by HVAC Type)
+HVAC system cooling loss factor (Set by HVAC Type)
+DHW Distribution Efficiency  (Set by DHW Dist Type)
+Heating pumps control factor
+Cooling pumps control factor
+Daylight Sensor  Dimming Fraction
+Occupancy Sensor Control Fraction
+Constant Illumination Control Fraction
+Heat Gain per Person (Use 80 W/p unless tuning)
+Electric Powered Appliances Ref Value  [W/m2]
+Natural Gas Powered Appliances [W/m2]
+Mechanical ventilation fresh air exhaust rate
+Building connected to DH
+Efficiency of heating network
+Efficiency of DH heating system
+Fraction of free heat source to DH
+Building connected to DC
+Efficiency of cooling network
+COP of DC electric chillers
+fraction of cold coming from district absorption chillers
+COP of DC absorption chiller
+Fraction of free heat source to absorption chillers
+PV module Surface Area [m2]
+PV module Orientation
+PV module Angle
+PV module power generation efficiency
+Type of building integration of PV module

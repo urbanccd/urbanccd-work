@@ -1,0 +1,5 @@
+osg sh /bin/bash
+localhost sh /bin/bash
+persistent-coasters sh sh
+persistent-coasters octave octave
+persistent-coasters building_sweep /glusterfs/users/mwilde/EECalc/eecalc-script/scripts/building_sweep.sh

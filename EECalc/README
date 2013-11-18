@@ -1,0 +1,44 @@
+This README documents the process of running the EPlus computations via Swift. The ~swift script for the computations is sweep1.swift. The prerequisites and preparation of run is described in the following points:
+
+-- Access to OSDC
+-- Swift installed: On OSDC Swift installation is available are /glusterfs/users/swiftlang/kmaheshwari/swift-0.94.1
+   Add the bin dir of above installation to your PATH: export PATH=/glusterfs/users/swiftlang/kmaheshwari/swift-0.94.1/bin:$PATH
+
+-- Create compute instances from a snapshot/image which has the current EPlus directory and the following libraries installed:
+ glibc-static, glibc.i686, libgcc_s.so.1, libstdc++.so.6
+
+-- To install the above libraries on an instance use yum: yum -y install glibc-static glibc.i686 libgcc_s.so.1 libstdc++.so.6
+
+-- The compute nodes must also have the nodejs and nodejs module xml2json installed. The nodejs package can be installed by copying and untarring the node-v0.10.20-linux-x64.tar.gz package from /glusterfs/users/swiftlang/kmaheshwari on OSDC
+
+-- The xml2json package is already installed in the EPlus/examples directory. On compute instances, set the NODE_PATH environment variable to make the module available:
+ export NODE_PATH=$HOME/EPlus/example/node_modules
+
+-- Add the ip addresses of currently running instances to a file called hosts.txt. for example, if the ips are 172.16.1.9 and 172.16.1.16. The hosts.txt will look like:
+172.16.1.9 172.16.1.16
+
+ To run the application on OSDC instances from OSDC login node follow the steps below:
+
+step0. Change to the EPlus/examples directory:
+ cd ~/EPlus/examples
+
+step1. Run the setup script as follows: 
+ ./setup
+ This script will start the coaster service on login node and worker agents on compute nodes
+
+step2. Run the Swift script as follows:
+swift -sites.file sites.xml -tc.file tc.data -config cf sweep1.swift
+
+step3. Once complete, clean the log files and stop the coaster service as follows:
+  ./cleanup
+
+
+
+NOTES ON CLIMATE DATA
+
+% W.mdbt = [12 x 1] mean monthly dry bulb temp (C)
+% W.mrh = [12 x 1] mean monthly relative humidity (%)
+% W.mwind = [12 x 1] mean monthly wind speed; (m/s) 
+% W.msolar = [12 x 8] mean monthly total solar radiation (W/m2) on a vertical surface for each of the 8 cardinal directions
+% W.mhdbt = [12 x 24] mean monthly dry bulb temp for each of the 24 hours of the day (C)
+% W.mhEgh =[12 x 24] mean monthly Global Horizontal Radiation for each of the 24 hours of the day (W/m2)

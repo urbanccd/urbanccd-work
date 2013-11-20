@@ -1,1 +1,1 @@
-echo $(nova list | grep LakeSim | sed -e 's/^.*=//' -e 's/ .*//')
+echo $(nova list | grep Lake0 | sed -e 's/^.*=//' -e 's/ .*//')

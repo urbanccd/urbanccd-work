@@ -35,7 +35,7 @@ Extra Electric Plugload Billed Directly to Tenant [kW],0,-,0,0,-,-,-,-,-,-
 Cooling System COP [KW/KW],5,u,4,6,-,7.5,b,7,8,-
 Cooling system Integrated Partial Load index Value (IPLV),0.8,u,0.8,1.2,-,1.2,u,1.1,1.3,-
 HVAC system type,24,-,-,-,-,-,-,-,-,-
-Heating Energy Carrier,2,Dist,A,B,C,M,Dist,A,B,C
+Heating Energy Carrier,1,Dist,A,B,C,M,Dist,A,B,C
 Heating System Efficiency [KW/KW],0.8,u,0.7,0.9,-,-,-,-,-,-
 Ventilation type,1,Dist,A,B,C,M,Dist,A,B,C
 Fresh air supply  flow rate,148114,u,103679.8,192548.2,-,-,-,-,-,-
@@ -48,7 +48,7 @@ Pump control for heating,3,-,-,-,-,-,-,-,-,-
 DHW Demand [m3/yr],14811,u,7405.5,22216.5,-,-,-,-,-,-
 DHW System Efficiency,0.8,u,0.7,0.9,-,-,-,-,-,-
 DHW Distribution System,3,-,-,-,-,-,-,-,-,-
-DHW Energy Carrier,2,-,-,-,-,-,-,-,-,-
+DHW Energy Carrier,1,-,-,-,-,-,-,-,-,-
 Type of BEM system installed,2,-,-,-,-,-,-,-,-,-
 InteriorHeat Capacity (Thermal Mass),1,-,-,-,-,-,-,-,-,-
 Envelope Heat Capacity (Thermal Mass),1,-,-,-,-,-,-,-,-,-

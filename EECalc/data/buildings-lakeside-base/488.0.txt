@@ -1,0 +1,117 @@
+EUI Mode,EUI,-,-,-,-,-,-,-,-,-
+Calculation Mode,Deterministic,-,-,-,-,-,-,-,-,-
+Number of Monte Carlo Runs,1,-,-,-,-,-,-,-,-,-
+Building Type,LargeOffice,-,-,-,-,-,-,-,-,-
+Year Built,1980,-,-,-,-,-,-,-,-,-
+Location,Chicago,-,-,-,-,-,-,-,-,-
+Weather Data,TMY,-,-,-,-,-,-,-,-,-
+Terrain class,0.8,-,-,-,-,-,-,-,-,-
+Above Ground Stories,3.0,-,-,-,-,-,-,-,-,-
+Total building conditioned floor area [m2],17987.6191406,-,-,-,-,-,-,-,-,-
+Floor-to-Floor Height [m],12.0,-,-,-,-,-,-,-,-,-
+Building occupancy schedule - From:,1,-,-,-,-,-,-,-,-,-
+Building occupancy schedule - To:,5,-,-,-,-,-,-,-,-,-
+Equivalent full-load occupancy hours - From:,8,-,-,-,-,-,-,-,-,-
+Equivalent full-load occupancy hours - To:,18,-,-,-,-,-,-,-,-,-
+People Density: Occ (m2/person),15,-,-,-,-,-,-,-,-,-
+People Density: Unocc (m2/person),150,-,-,-,-,-,-,-,-,-
+Occupied Internal set point for heating [¡C],21,u,19,23,-,-,-,-,-,-
+Unoccupied Internal set point for heating [¡C],16,-,-,-,-,-,-,-,-,-
+Occupied Internal set point for cooling [¡C],21,u,19,23,-,-,-,-,-,-
+Unoccupied Internal set point for cooling [¡C],26,-,-,-,-,-,-,-,-,-
+Electric Powered Appliances [W/m2] Occ,12,u,6,15,-,-,-,-,-,-
+Electric Powered Appliances [W/m2] Unocc,0.8,u,0.4,1.5,-,-,-,-,-,-
+Natural Gas Powered Appliances [W/m2] Occ,0,-,0,0,-,-,-,-,-,-
+Natural Gas Powered Appliances [W/m2] Unocc,0,-,0,0,-,-,-,-,-,-
+Occupied Interior Lighting Power Intensity [W/m2] ,12,-,6,15,-,-,-,-,-,-
+Unoccupied Interior Lighting Power Intensity [W/m2] ,1.2,-,-,-,-,-,-,-,-,-
+Exterior Lighting Power [W],0,-,-,-,-,-,-,-,-,-
+Lighting daylighting sensor system,1,-,-,-,-,-,-,-,-,-
+Lighting occupancy sensor system,1,-,-,-,-,-,-,-,-,-
+Lighting constant illumination control,1,-,-,-,-,-,-,-,-,-
+Fraction of Electric Plugload  Billed to Tenant,0,-,0,0,-,-,-,-,-,-
+Fraction of Lighting  Billed to Tenant,0,-,0,0,-,-,-,-,-,-
+Extra Electric Plugload Billed Directly to Tenant [kW],0,-,0,0,-,-,-,-,-,-
+Cooling System COP [KW/KW],5,u,4,6,-,7.5,b,7,8,-
+Cooling system Integrated Partial Load index Value (IPLV),0.8,u,0.8,1.2,-,1.2,u,1.1,1.3,-
+HVAC system type,24,-,-,-,-,-,-,-,-,-
+Heating Energy Carrier,2,Dist,A,B,C,M,Dist,A,B,C
+Heating System Efficiency [KW/KW],0.8,u,0.7,0.9,-,-,-,-,-,-
+Ventilation type,1,Dist,A,B,C,M,Dist,A,B,C
+Fresh air supply  flow rate,148114,u,103679.8,192548.2,-,-,-,-,-,-
+Supply-Exhaust Rate (Default = 0 L/S),10000,-,9000,11000,-,-,-,-,-,-
+Heat recovery efficiency,0,-,0,0,-,-,-,-,-,-
+Exhaust air recirculation percentage,0,-,-,-,-,-,-,-,-,-
+Building air leakage (infiltration),1,-,-,-,-,-,-,-,-,-
+Pump control for cooling,3,-,-,-,-,-,-,-,-,-
+Pump control for heating,3,-,-,-,-,-,-,-,-,-
+DHW Demand [m3/yr],14811,u,7405.5,22216.5,-,-,-,-,-,-
+DHW System Efficiency,0.8,u,0.7,0.9,-,-,-,-,-,-
+DHW Distribution System,3,-,-,-,-,-,-,-,-,-
+DHW Energy Carrier,2,-,-,-,-,-,-,-,-,-
+Type of BEM system installed,2,-,-,-,-,-,-,-,-,-
+InteriorHeat Capacity (Thermal Mass),1,-,-,-,-,-,-,-,-,-
+Envelope Heat Capacity (Thermal Mass),1,-,-,-,-,-,-,-,-,-
+Specifiec fan power [W/(l/s)],2.5,-,-,-,-,-,-,-,-,-
+Fan flow control factor,1,-,-,-,-,-,-,-,-,-
+U-value ,5,-,4.85,7.5,-,-,-,-,-,-
+Solar Absorption coefficient,0.5,-,-,-,-,-,-,-,-,-
+Thermal Emissivity,0.5,-,-,-,-,-,-,-,-,-
+U-value  [W/m2K],6.8,-,6.65,10.2,-,-,-,-,-,-
+SHGC,0.25,-,0.15,0.45,-,-,-,-,-,-
+Shading Correction Factor (for overhangs),1,-,-,-,-,-,-,-,-,-
+Shading Device,1,-,-,-,-,-,-,-,-,-
+U-value,0.28,-,0.13,0.43,-,-,-,-,-,-
+Solar Absorption coefficient,0.5,-,-,-,-,-,-,-,-,-
+Thermal Emissivity,0.5,-,-,-,-,-,-,-,-,-
+U-value ,3.01,-,2.86,4.515,-,-,-,-,-,-
+SHGC,0.3,-,0.2,0.5,-,-,-,-,-,-
+S Wall Area,4317.02563477,-,-,-,-,-,-,-,-,-
+SE Wall Area,0,-,-,-,-,-,-,-,-,-
+E Wall Area,1800.00036621,-,-,-,-,-,-,-,-,-
+NE Wall Area,0,-,-,-,-,-,-,-,-,-
+N Wall Area,4317.0300293,-,-,-,-,-,-,-,-,-
+ NE Wall Area,0,-,-,-,-,-,-,-,-,-
+W Wall Area,1800.00036621,-,-,-,-,-,-,-,-,-
+SW Wall Area,0,-,-,-,-,-,-,-,-,-
+Roof Area,5995.87353516,-,-,-,-,-,-,-,-,-
+S Window Area,0,-,-,-,-,-,-,-,-,-
+SE Window Area,0,-,-,-,-,-,-,-,-,-
+E WindowArea,0,-,-,-,-,-,-,-,-,-
+NE WindowArea,0,-,-,-,-,-,-,-,-,-
+N Window Area,0,-,-,-,-,-,-,-,-,-
+ NE Window Area,0,-,-,-,-,-,-,-,-,-
+W Window Area,0,-,-,-,-,-,-,-,-,-
+SW Window Area,0,-,-,-,-,-,-,-,-,-
+Skylight Area,0,-,-,-,-,-,-,-,-,-
+Interior Heat Capacity (set by qualitative pulldown),80000,b,40000,120000,-,-,-,-,-,-
+Exterior Heat Capacity (set by qualitative pulldown),80000,-,-,-,-,-,-,-,-,-
+Infiltration  (set by qualitative pulldown above),4,u,0.1,6,-,-,-,-,-,-
+HVAC Hot/Cold Waste Factor (Set by HVAC Type),0,-,0,0.04,-,-,-,-,-,-
+HVAC system heating loss factor (Set by HVAC Type),0.25,-,0.17,0.33,-,-,-,-,-,-
+HVAC system cooling loss factor (Set by HVAC Type),0,-,-,-,-,-,-,-,-,-
+DHW Distribution Efficiency  (Set by DHW Dist Type),0.6,-,-,-,-,-,-,-,-,-
+Heating pumps control factor,1,-,-,-,-,-,-,-,-,-
+Cooling pumps control factor,1,-,-,-,-,-,-,-,-,-
+Daylight Sensor  Dimming Fraction,1,-,-,-,-,-,-,-,-,-
+Occupancy Sensor Control Fraction,1,-,-,-,-,-,-,-,-,-
+Constant Illumination Control Fraction,1,-,-,-,-,-,-,-,-,-
+Heat Gain per Person (Use 80 W/p unless tuning),80,-,-,-,-,-,-,-,-,-
+Electric Powered Appliances Ref Value  [W/m2],10.76,-,-,-,-,-,-,-,-,-
+Natural Gas Powered Appliances [W/m2],0,-,-,-,-,-,-,-,-,-
+Mechanical ventilation fresh air exhaust rate,138114,-,-,-,-,-,-,-,-,-
+Building connected to DH,0,-,-,-,-,-,-,-,-,-
+Efficiency of heating network,0.9,-,-,-,-,-,-,-,-,-
+Efficiency of DH heating system,0.87,-,-,-,-,-,-,-,-,-
+Fraction of free heat source to DH,0,-,-,-,-,-,-,-,-,-
+Building connected to DC,1,-,-,-,-,-,-,-,-,-
+Efficiency of cooling network,0.9,-,-,-,-,-,-,-,-,-
+COP of DC electric chillers,5.5,-,-,-,-,-,-,-,-,-
+fraction of cold coming from district absorption chillers,0,-,-,-,-,-,-,-,-,-
+COP of DC absorption chiller,1,-,-,-,-,-,-,-,-,-
+Fraction of free heat source to absorption chillers,0,-,-,-,-,-,-,-,-,-
+PV module Surface Area [m2],0,-,-,-,-,-,-,-,-,-
+PV module Orientation,South,-,-,-,-,-,-,-,-,-
+PV module Angle,30,-,-,-,-,-,-,-,-,-
+PV module power generation efficiency,0.15,-,-,-,-,-,-,-,-,-
+Type of building integration of PV module,0.75,-,-,-,-,-,-,-,-,-

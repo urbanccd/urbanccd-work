@@ -1,0 +1,170 @@
+ # ISM generated on 20 -Nov-2013 from isomodel_template.xlsx
+# Building Type = AptMidRise 2010 located in c:\epw\ord.epw
+weatherFilePath = ORD
+# Terrain class urban/city = 0.8, suburban/some shielding = 0.9, country/open = 1.0
+terrainClass = 0.8
+# building height is in m,  floor area is in m^2, people density is m2/person
+buildingHeight = 12.19
+floorArea = 2351
+peopleDensityOccupied = 50.15
+peopleDensityUnoccupied = 32.44
+occupancyDayStart = 0
+occupancyDayEnd = 6
+occupancyHourStart= 0
+occupancyHourEnd= 17
+# LPD, EPD, GPD all in W/m2, ext light power in W, an heat gain is W/person
+lightingPowerDensityOccupied = 1.28
+lightingPowerDensityUnoccupied = 1.82
+electricAppliancePowerDensityOccupied = 4.81
+electricAppliancePowerDensityUnoccupied = 6.5
+gasAppliancePowerDensityOccupied  = 0
+gasAppliancePowerDensityUnoccupied = 0
+exteriorLightingPower = 1270
+heatGainPerPerson = 95
+# daylight sensors, occupancy sensors, illum control are set to 1 if there is no control.   See iso 15193 Annex F/G for values
+daylightSensorSystem= 1
+lightingOccupancySensorSystem= 1
+constantIlluminationControl= 1
+# Temp set points in degrees C
+heatingSetpointOccupied = 21.7
+heatingSetpointUnoccupied = 17.7
+coolingSetpointOccupied = 24.4
+coolingSetpointUnoccupied = 29.4
+# HVAC waste, heating and cooling loss factors set by HVAC type from EN 15243
+hvacWasteFactor= 0
+hvacHeatingLossFactor= 0.08
+hvacCoolingLossFactor= 0
+# COP is W/W, coolingSystemIPLV is the ratio of IPLV/COP
+coolingSystemCOP= 5
+coolingSystemIPLVToCopRatio= 0.5
+#energycarrier is 1 if electric, 2 if gas
+heatingFuelType= 2
+heatingSystemEfficiency= 0.8
+# vent type is 1 if mech, 2 if natural, 3 if mixed, flow rates in m^3/hr
+ventilationType = 3
+# ventilation flow rates in L/s, default is 10 L/s/person ~ 20 cfm/person
+ventilationIntakeRateOccupied= 858
+ventilationIntakeRateUnoccupied= 858
+ventilationExhaustRateOccupied= 858
+ventilationExhaustRateUnoccupied= 858
+# heatRecover = efficiency of heat recovery (0 for none), exhaustAirRecir = fraction of supply air recirculated
+heatRecovery= 0
+exhaustAirRecirculation= 0
+# DHW demand in m3/yr use 10 m3/yr/person as a default for offices
+dhwDemand= 1874
+# dhwDistribution efficiency all taps w/i 3m = 1, taps more than 3m = 0.8, circulation or unknown = 0.6, see NEN 2916 12.6, 
+dhwSystemEfficiency= 0.8
+dhwDistributionEfficiency= 1
+dhwFuelType= 2
+# Surface Heat capacity in J/K/m2
+interiorHeatCapacity= 98010
+exteriorHeatCapacity= 46324
+# BEM type 1= none, 2 = simple, 3=advanced with FDD
+bemType= 1
+# specific fan power in L/s/W,  flow control factor is energy reduction from fan control measures
+specificFanPower= 0.89
+# fan flow control  1= no control, 0.75 = inlet blade adjuct, 0.65= variable speed  see NEN 2916 7.3.3.4  
+fanFlowcontrolFactor= 1
+# infiltration in m3/m2/hr based on surface area
+infiltrationRateOccupied= 7.6
+infiltrationRateUnoccupied= 7.6
+# pump control 0= no pump, 0.5 = auto pump controls for more 50% of pumps, 1.0 = all other cases.   See NEN 2914 9.4.3
+heatingPumpControl= 1
+coolingPumpControl= 1
+# Areas in m2, U values in W/m2/K
+# SCF = solar control factor (external control), SDF = shading device factor = internal shading
+roofArea= 783.66
+roofUValue= 0.27
+roofSolarAbsorption= 0.7
+roofThermalEmissivity= 0.9
+skylightArea= 0
+skylightUValue= 0
+skylightSHGC= 0
+skylightSCF= 1
+skylightSDF= 1
+WallAreaS= 564.8
+WallUvalueS= 0.363
+WallSolarAbsorptionS= 0.7
+WallThermalEmissivityS= 0.9
+WallAreaSE= 0
+WallUvalueSE= 0.363
+WallSolarAbsorptionSE= 0.7
+WallThermalEmissivitySE= 0.9
+WallAreaE= 202.22
+WallUvalueE= 0.363
+WallSolarAbsorptionE= 0.7
+WallThermalEmissivityE= 0.9
+WallAreaNE= 0
+WallUvalueNE= 0.363
+WallSolarAbsorptionNE= 0.7
+WallThermalEmissivityNE= 0.9
+WallAreaN= 564.8
+WallUvalueN= 0.363
+WallSolarAbsorptionN= 0.7
+WallThermalEmissivityN= 0.9
+WallAreaNW= 0
+WallUvalueNW= 0.363
+WallSolarAbsorptionNW= 0.7
+WallThermalEmissivityNW= 0.9
+WallAreaW= 206.22
+WallUvalueW= 0.363
+WallSolarAbsorptionW= 0.7
+WallThermalEmissivityW= 0.9
+WallAreaSW= 0
+WallUvalueSW= 0.27
+WallSolarAbsorptionSW= 0.7
+WallThermalEmissivitySW= 0.9
+WindowAreaS= 83.2
+WindowUValueS= 2.653
+WindowSHGCS= 0.426
+WindowSCFS= 1
+WindowSDFS= 1
+WindowAreaSE= 0
+WindowUValueSE= 2.653
+WindowSHGCSE= 0.426
+WindowSCFSE= 1
+WindowSDFSE= 1
+WindowAreaE= 33.66
+WindowUValueE= 2.653
+WindowSHGCE= 0.426
+WindowSCFE= 1
+WindowSDFE= 1
+WindowAreaNE= 0
+WindowUValueNE= 2.653
+WindowSHGCNE= 0.426
+WindowSCFNE= 1
+WindowSDFNE= 1
+WindowAreaN= 83.2
+WindowUValueN= 2.653
+WindowSHGCN= 0.426
+WindowSCFN= 1
+WindowSDFN= 1
+WindowAreaNW= 0
+WindowUValueNW= 2.653
+WindowSHGCNW= 0.426
+WindowSCFNW= 1
+WindowSDFNW= 1
+WindowAreaW= 33.66
+WindowUValueW= 2.653
+WindowSHGCW= 0.426
+WindowSCFW= 1
+WindowSDFW= 1
+WindowAreaSW= 0
+WindowUValueSW= 2.653
+WindowSHGCSW= 0.426
+WindowSCFSW= 1
+WindowSDFSW= 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+

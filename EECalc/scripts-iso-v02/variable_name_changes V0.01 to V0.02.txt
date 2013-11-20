@@ -1,0 +1,49 @@
+To clarify the ISM variable language to make programming and reading .ISM files easier, several variables have changed names
+
+We changed the following:
+
+buildingOccupancyFrom -> occupancyStartDay -> occupancyDayStart
+buildingOccupancyTo ->	occupancyEndDay -> occupancyDayEnd
+equivFullLoadOccupancyFrom -> occupancyStartHour -> occupancyHourStart
+equivFullLoadOccupancyTo-> occupancyEndHour-> occupancyHourEnd
+
+lightingPowerIntensityOccupied -> lightingPowerDensityOccupied
+lightingPowerIntensityUnoccupied -> lightingPowerDensityUnoccupied
+elecPowerAppliancesOccupied -> electricAppliancePowerDensityOccupied
+elecPowerAppliancesUnoccupied -> electricAppliancePowerDensityUnoccupied
+gasPowerAppliancesOccupied -> gasAppliancePowerDensityOccupied
+gasPowerAppliancesUnoccupied -> gasAppliancePowerDensityUnoccupied
+
+heatingOccupiedSetpoint -> heatingSetpointOccupied
+heatingUnoccupiedSetpoint -> heatingSetpointUnoccupied
+coolingOccupiedSetpoint -> coolingSetpointOccupied
+coolingUnoccupiedSetpoint -> coolingSetpointUnoccupied
+
+heatingEnergyCarrier -> heatingFuelType
+dhwEnergyCarrier -> dhwFueltype
+
+freshairFlowRate -> ventilationIntakeRateOccupied
+supplyExhaustRate -> ventilationExhaustRateOccupied
+
+infiltration -> infiltrationRateOccupied
+
+
+To add some flexibility with only minor coding changes, we added the following variables:
+ventilationIntakeRateUnoccupied
+ventilationExhaustRateUnoccupied
+skylightSCF
+skylightSDF
+
+
+
+This resulted in the following changes to the isomodel building description structure:
+
+In.vent_supply_rate  -> In.vent_supply_rate_occ 
+In.vent_exhaust_rate -> In.vent_exhaust_rate_occ 
+
+new variables in structure
+In.vent_supply_rate_unocc 
+In.vent_exhaust_rate_unocc
+
+In.win_SCF(9) = skylightSCF
+In.win_SCF(9) = skylightSDF

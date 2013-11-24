@@ -1,0 +1,9 @@
+pnum pname        pvals
+1    ORIENT       0,30
+2    NumberFloors 5,10
+3    W            10,20
+4    L            10,20,30
+5    WINTOP       1.8,2.5
+6    HVACSystem   SYSTEM7,OptimizedVAV
+7    ENDMONTH     2
+8    ENDDAY       28

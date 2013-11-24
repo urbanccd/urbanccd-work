@@ -1,0 +1,63 @@
+make sweep.swift *totally* general for an unlimited number of sweep
+variables, but I don't see how yet.
+
+swift enh: dont require - on @args on shell cmd line
+
+swift enh: always being back files, stdout, stderr, even if on
+coasters prover staging, in debug mode.
+
+swift enh: make it easier to return less results or an optional number
+  of results debug mode is only a partial answr
+
+swift enh: provide simple dictionary methods for passing lengthy arg
+lists; dont require etenesive redeclaration o everything.
+
+swift eng: make string or file a default type:
+
+app  (file a, b, c)  myfunc( int a, b, string c, d)
+
+Design principles: easy to pass multi-params down several layers; easy
+to get diag info across layers, especially form the ap layer to the
+top (ie where were the EPlus errors)
+
+Design principle: easy to test an app() and its app.sh in its "native
+swift environment" eg like TestRunEP.
+
+provide @args() func to return vector of arg names (to process
+arbitrary argnames)
+
+Provide functions to turn json docs ino swift structs (also protocol
+buffers)
+
+command line option to turn on tracing (possibly multiple trace
+levels)
+
+Why writing 3x files per app grinds to a halt on /lustre after ~1500
+apps?
+
+Can we get output batching to work via CDM?  Or manually?
+
+Need a Swif output spec(s) to gather all instance of files or FDs
+(std*) into single files on the Swift client.  The app() must do
+whatever app-scpecific labelling is needed (if any) to ensure that the
+output streasms can be intelligently processed.  Some options include
+swift auto-labelling based on file name:
+
+START output/f123.out
+txt
+txt
+txt
+END output/f123.out
+etc
+
+The file would be called app.filename or could be mapped to something
+like: batch://app/file/name//file/name/within/batch
+
+This could be done initially to only work with provider staging.
+
+(filed in bugzila)
+
+
+
+
+

@@ -1,0 +1,63 @@
+
+To Run:
+
+  Edit setenv.sh and check to ensure that the specified tool
+  directories (for EnergyPlus and Node) exist and are accessible.
+
+
+For Beagle:
+
+  ./run.beagle.sh -sweep=t02.96T.12M.sweep -outdir=run09
+
+
+For Open Science Data Cloud (OSDC):
+
+  ./setup      # to start Swift worker service
+
+  ./run.osdc.sh -sweep=t02.96T.12M.sweep -outdir=run09
+
+  ./cleanup   # to stop Swift worker service
+
+
+Options for run scripts are:
+
+  -outdir=run01
+  -epconfig=SWEEP_RECT.imf
+  -epweather=CHICAGO.epw
+  -sweep=t1.sweep
+
+
+Other run scripts are:
+
+  ./run.beagle.debug.sh
+  ./run.osdc.debug.sh
+
+
+Sweep parameter files look like:
+
+pnum pname        pvals
+1    ORIENT       0,30,60
+2    NumberFloors 5,10,15,20
+3    W            10,20,30,40
+4    L            10,20,30,40
+5    WINTOP       1.8,2.5,3.5
+6    HVACSystem   SYSTEM7,OptimizedVAV,DOASFCU,DOASECMFCU
+7    ENDMONTH     2
+8    ENDDAY       28
+
+You can put *any* variables from the .imf file into the param-set
+file.
+
+The number of variables in this file is fixed, and must match the
+number of loops and array entries in the sweep.swift script.
+
+NOTE WELL: currently, 8
+
+The current version of sweep.swift is limited to 8 variables but you
+can easily add more to the .swift script. No .imf variable names are
+hard-coded (or even appear) in the .swift script any more. 
+If we set it to 12 or 15 that would be more than enough for most
+imaginable studies. 
+
+Unused variables must be coded as, e.g., "9 X X" where X can be any
+string thats not a variable in the .imf file. (I think "X" is ok).

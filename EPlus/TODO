@@ -1,3 +1,15 @@
+
+
+
+    
+    Install public 0.94.1 (and trunk) on OSDC, /glusterfs/users/swiftlang
+    Ensure node modules in place (beagle and osdc)
+    push osdc-specific changes
+    Test osdc
+
+
+
+
 make sweep.swift *totally* general for an unlimited number of sweep
 variables, but I don't see how yet.
 

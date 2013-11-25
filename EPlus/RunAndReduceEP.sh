@@ -37,8 +37,8 @@ if [ $RC = 0 ]; then
 
   echo Energy Plus application completed: RC=0
 
-  export NODE_PATH=$bin/node_modules
-  $NODE_DIR/bin/node $bin/parse.js eplustbl.xml
+  export NODE_PATH=/glusterfs/users/swiftlang/node_modules
+  $NODE_DIR/node $bin/parse.js eplustbl.xml
   RC=$?
   cp eplustbl.json $outjson
   if [ $RC != 0 ]; then

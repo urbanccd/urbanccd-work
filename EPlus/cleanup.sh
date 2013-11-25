@@ -1,10 +1,9 @@
 #!/bin/bash
 
-rm -rf *.log *.rlog *.d sweep1-*-*-* *.kml *.swiftx *.out output outdir logs hw.* _concurrent .swift/tmp
-
-echo "cleaning up ..."
-sleep 1
+# rm -rf *.log *.rlog *.d sweep1-*-*-* *.kml *.swiftx *.out output outdir logs hw.* _concurrent .swift/tmp
 
 echo "stopping coaster service"
-sleep 1
+
+PATH=/glusterfs/users/swiftlang/swift-0.94.1/bin:$PATH
+
 stop-coaster-service

@@ -7,7 +7,7 @@ if [ -d /lustre/beagle ]; then     # UChicago Cray "Beagle"
 
 elif [ -d /glusterfs/users ]; then # Open Science Data Cloud
 
-  export ENERGYPLUS_DIR=/glusterfs/users/kmaheshwari/EnergyPlus-8-0-0
+  export ENERGYPLUS_DIR=/root/EPlus/EnergyPlus-8-0-0/bin
   export NODE_DIR=/root/node-v0.10.20-linux-x64/bin
 
 else

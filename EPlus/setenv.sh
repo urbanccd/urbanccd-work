@@ -2,13 +2,15 @@
 
 if [ -d /lustre/beagle ]; then     # UChicago Cray "Beagle"
 
-  export ENERGYPLUS_DIR=/lustre/beagle/wilde/EnergyPlus-8-0-0/bin
+  export ENERGYPLUS_DIR=/lustre/beagle/wilde/EPlus/EnergyPlus-8-0-0/bin
   export NODE_DIR=/lustre/beagle/ketan/node-v0.10.20-linux-x64/bin
+  export NODE_PATH=/lustre/beagle/wilde/EPlus/examples/node_modules
 
 elif [ -d /glusterfs/users ]; then # Open Science Data Cloud
 
   export ENERGYPLUS_DIR=/root/EPlus/EnergyPlus-8-0-0/bin
   export NODE_DIR=/root/node-v0.10.20-linux-x64/bin
+  export NODE_PATH=/glusterfs/users/swiftlang/node_modules
 
 else
 

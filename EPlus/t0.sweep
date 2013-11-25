@@ -1,0 +1,10 @@
+pnum pname        pvals
+1    ORIENT       30
+2    NumberFloors 5
+3    W            10
+4    L            20
+5    WINTOP       1.8
+6    HVACSystem   SYSTEM7
+7    ENDMONTH     1
+8    ENDDAY       31
+

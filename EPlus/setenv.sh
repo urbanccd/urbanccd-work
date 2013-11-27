@@ -34,6 +34,9 @@ if [ ! -x $NODE_DIR ]; then
   RC=1
 fi
 
+# Load the Swift module
+module load swift
+
 if [ _RC = _1 ]; then
   exit 1
 fi

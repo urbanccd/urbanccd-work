@@ -1,3 +1,6 @@
+#!/bin/bash
+
+set -x
 # export ENERGYPLUS_DIR=$bin/../EnergyPlus-8-0-0/bin
 
 if [ -d /lustre/beagle ]; then     # UChicago Cray "Beagle"
@@ -5,6 +8,8 @@ if [ -d /lustre/beagle ]; then     # UChicago Cray "Beagle"
   export ENERGYPLUS_DIR=/lustre/beagle/wilde/EPlus/EnergyPlus-8-0-0/bin
   export NODE_DIR=/lustre/beagle/ketan/node-v0.10.20-linux-x64/bin
   export NODE_PATH=/lustre/beagle/wilde/EPlus/examples/node_modules
+  # Load the Swift module
+  module load swift
 
 elif [ -d /glusterfs/users ]; then # Open Science Data Cloud
 
@@ -34,8 +39,6 @@ if [ ! -x $NODE_DIR ]; then
   RC=1
 fi
 
-# Load the Swift module
-module load swift
 
 if [ _RC = _1 ]; then
   exit 1

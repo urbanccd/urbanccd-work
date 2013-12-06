@@ -1,7 +1,9 @@
 #!/bin/bash
 
 set -x
-# export ENERGYPLUS_DIR=$bin/../EnergyPlus-8-0-0/bin
+export ENERGYPLUS_DIR=$HOME/EnergyPlus-8-0-0/bin
+export NODE_DIR=$HOME/node-v0.10.20-linux-x64/bin
+export NODE_PATH=$HOME/node-v0.10.20-linux-x64/node_modules
 
 if [ -d /lustre/beagle ]; then     # UChicago Cray "Beagle"
 
@@ -19,8 +21,7 @@ elif [ -d /glusterfs/users ]; then # Open Science Data Cloud
 
 else
 
-  echo setenv.sh: ERROR: Unknown system. Exiting.
-  exit 1
+  echo "WARNING: This is not Beagle or OSDC, check environment before proceeding."
 
 fi
 
@@ -38,7 +39,6 @@ if [ ! -x $NODE_DIR ]; then
   echo setenv.sh: ERROR: $NODE_DIR not found or not accessible.
   RC=1
 fi
-
 
 if [ _RC = _1 ]; then
   exit 1

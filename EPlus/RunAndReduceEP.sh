@@ -37,9 +37,10 @@ if [ $RC = 0 ]; then
 
   echo Energy Plus application completed: RC=0
 
-  $NODE_DIR/node $bin/parse.js eplustbl.xml
+  $NODE_DIR/node $bin/parse.js eplustbl.xml $outjson
   RC=$?
   cp eplustbl.json $outjson
+
   if [ $RC != 0 ]; then
     echo Postprocessing script failed: RC=$RC
   else

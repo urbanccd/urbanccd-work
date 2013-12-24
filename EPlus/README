@@ -15,9 +15,9 @@ For Open Science Data Cloud (OSDC):
   # start instances of Image "EPlus"
 
   # create hosts.txt file: list of space-separated host names or IP addresses
-  # (can use listhosts.xh to get this list, from OSDC Sullivan login node.
+  # (can use listhosts.shh to get this list, from OSDC Sullivan login node.
 
-  ./setup      # to start Swift worker service
+  ./setup.sh  # to start Swift worker service
 
   ./run.osdc.sh -sweep=t02.96T.12M.sweep -outdir=run09
 

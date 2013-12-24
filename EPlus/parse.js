@@ -16,8 +16,10 @@ var parser = require('xml2json');
 var writefile = true;
 //var outputFilename = __dirname+'/output.json';
 
-// doposit to mongoDB
+// deposit to mongoDB
 var dbresult = false;
+
+var dbinput = arguments[1];
 
 var dbaddress = 'mongodb://'+
 'genius'+
@@ -26,7 +28,7 @@ var dbaddress = 'mongodb://'+
 ':27017'+
 '/EP';
 
-var dbcollection = 'PILOTRUN';
+var dbcollection = 'PILOTRUN1';
 
 fs.readFile('eplustbl.xml', function(err, data) {
 //fs.readFile('SWEEP_RECTTable.xml', function(err, data) {
@@ -483,8 +485,17 @@ var units = 'kWh/m2';
     //DHWAnnual
     //DHWMonthly
 
+
+var modelID = dbinput.split(".json")[0].split("/")[1];
+
+var parameters=[];
+for (i=0;i<modelID.split(".").length;i++){
+	parameters.push(modelID.split(".")[i]);
+}
+
 var result = {
-    "ModelID": outputFilename.split('.json')[0],
+    "ModelID": modelID,
+    "Parameters":parameters,
     "Units": units,
     "Total":{
         "Annual":TotalAnnual,

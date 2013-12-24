@@ -6,7 +6,7 @@ export SWIFT_HEAP_MAX=4G
 
 cat >apps <<END
 persistent-coasters sh    /bin/sh
-persistent-coasters RunEP $PWD/RunAndReduceEP.sh
+persistent-coasters RunEP $PWD/RunAndReduceEP.sh null null GLOBUS::maxwalltime="00:20:00"
 END
 
 cat >cf <<END
